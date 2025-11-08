@@ -3,7 +3,7 @@
  * Update CACHE_VERSION when you ship changes to force a refresh.
  */
 
-const CACHE_VERSION = "v5";
+const CACHE_VERSION = "v6";
 const CACHE_NAME = `pt-flashcards-${CACHE_VERSION}`;
 
 // List everything your app needs to run offline.
