@@ -38,15 +38,18 @@
     .sheet.open{bottom:0} .sheet header{display:flex;align-items:center;justify-content:space-between;padding:12px 14px;border-bottom:1px solid #ffffff22} .sheet header h3{margin:0;font-size:16px} .sheet .content{padding:12px 14px;overflow:auto}
     .sheet label{font-size:12px;opacity:.9} .sheet input,.sheet select,.sheet textarea{width:100%;margin:6px 0 12px;border-radius:10px;border:1px solid #ffffff33;padding:10px;background:#0f1220;color:#fff} .sheet .actions{display:flex;gap:8px} .sheet .actions button{flex:1;border:none;border-radius:10px;padding:10px;font-weight:700}
   html, body { height: 100%; }
+/* Remove/neutralize body top padding so we don't double count */
 body{
-  margin: 0;
-  font-family: ui-sans-serif,-apple-system,system-ui,'Segoe UI',Roboto,Arial;
-  background: linear-gradient(135deg,var(--bg1),var(--bg2));
-  color: #fff;
-  -webkit-tap-highlight-color: transparent;
-  min-height: 100dvh;
-  padding-top: calc(env(safe-area-inset-top) + 14px); /* ✅ Adjust this value */
-  padding-bottom: max(12px, env(safe-area-inset-bottom));
+  /* ... keep your other properties the same ... */
+  padding-top: 0; /* <- make sure this is 0 */
+}
+
+/* Give the header the safe-area top inset and a small cushion */
+header{
+  padding: calc(env(safe-area-inset-top) + 12px) 0 6px !important;
+  /*            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+     This pushes the title just below the Dynamic Island.
+     Increase 12px to 14/16px if you want a hair more space. */
 }
 
 header{
