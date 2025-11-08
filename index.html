@@ -45,13 +45,15 @@ body{
   color: #fff;
   -webkit-tap-highlight-color: transparent;
   min-height: 100dvh;
-  padding-top: max(12px, env(safe-area-inset-top));
-  padding-bottom: max(12px, env(safe-area-inset-bottom));
+body{
+  /* keep everything else as-is */
+  /* gentler top spacing: inset + a small cushion */
+  padding-top: calc(env(safe-area-inset-top) + 6px);
 }
 
 header{
-  padding: calc(8px + env(safe-area-inset-top)) 0 6px;
-  text-align: center;
+  /* standard header spacing; no extra safe-area here */
+  padding: 8px 0 6px;
 }
 
 .bottomnav{
