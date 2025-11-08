@@ -1,0 +1,2295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Portuguese (EU) Flashcards — Mobile</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="apple-touch-icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><rect width='100%' height='100%' fill='%23667eea'/><text x='50%' y='54%' font-size='92' text-anchor='middle' fill='white'>PT</text></svg>">
+  <style>
+    :root{ --bg1:#667eea; --bg2:#764ba2; --card:#fff; --text:#1f2937; --chip:#ffffff22; --chip-active:#ffffff55; }
+    *{box-sizing:border-box} html,body{height:100%} body{margin:0;font-family:ui-sans-serif,-apple-system,system-ui,'Segoe UI',Roboto,Arial;background:linear-gradient(135deg,var(--bg1),var(--bg2));color:#fff;-webkit-tap-highlight-color:transparent;}
+    .container{max-width:620px;margin:0 auto;padding:12px 14px 90px}
+    header{padding:8px 0 6px;text-align:center} header h1{font-size:22px;margin:6px 0 2px} header p{margin:0;opacity:.9;font-size:13px}
+    .progress-wrap{background:#ffffff2a;border-radius:12px;padding:3px;margin:10px 0} .progress{height:18px;border-radius:9px;background:#22c55e;width:0%;display:flex;align-items:center;justify-content:center;font-size:11px;color:#fff;transition:width .25s}
+    .stats{display:flex;gap:10px;justify-content:space-between;margin:10px 0 8px} .stat{flex:1;background:#ffffff18;border-radius:12px;padding:10px 8px;text-align:center} .stat .num{font-weight:700}
+    .chipbar-wrap{position:relative;margin:10px -6px 12px -6px} .chipbar{display:flex;gap:8px;overflow-x:auto;overflow-y:hidden;padding:8px 2px 2px;scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch} .chipbar::-webkit-scrollbar{height:6px} .chipbar::-webkit-scrollbar-thumb{background:#ffffff44;border-radius:6px}
+    .chip{scroll-snap-align:start;white-space:nowrap;border:1.5px solid #fff3;border-radius:999px;padding:8px 12px;font-size:13px;opacity:.95;background:var(--chip);backdrop-filter:saturate(140%) blur(2px);cursor:pointer} .chip.active{background:var(--chip-active);border-color:#fff8}
+    .chev{position:absolute;top:6px;bottom:6px;width:34px;display:flex;align-items:center;justify-content:center;background:linear-gradient(to right, rgba(0,0,0,.25), rgba(0,0,0,0));border:none;color:#fff;border-radius:12px;opacity:.85} .chev.right{right:0;transform:rotate(180deg)} .chev.left{left:0} .chev:active{opacity:1}
+    .card-area{perspective:1200px} .card{position:relative;border-radius:16px;min-height:310px;background:var(--card);color:var(--text);transform-style:preserve-3d;transition:transform .6s;box-shadow:0 10px 26px rgba(0,0,0,.25);} .card.flipped{transform:rotateY(180deg)}
+    .face{position:absolute;inset:0;border-radius:16px;backface-visibility:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:28px;text-align:center} .front{background:#fff} .back{background:linear-gradient(135deg,#f093fb,#f5576c);color:#fff;transform:rotateY(180deg)}
+    .pt{font-size:30px;font-weight:800;margin-bottom:14px} .en{font-size:22px;margin-bottom:10px;font-weight:700} .phon{font-size:16px;font-style:italic;opacity:.95} .vars{margin-top:12px;font-size:14px;opacity:.95} .vars .tag{display:inline-block;border:1px solid #ffffffaa;border-radius:999px;padding:4px 8px;margin:3px}
+    .hint{text-align:center;font-size:12px;opacity:.85;margin:8px 0 4px}
+    .row{display:flex;gap:10px;margin-top:14px} .btn{flex:1;border:none;border-radius:12px;padding:14px 12px;font-weight:700;font-size:16px;color:#fff;box-shadow:0 6px 14px rgba(0,0,0,.18);} .btn:active{transform:translateY(1px)} .know{background:#4CAF50} .dont{background:#f44336}
+    .topshell{display:flex;align-items:center;justify-content:space-between;margin-top:6px} .ghost{background:#0000;border:1.5px solid #fff8;color:#fff;border-radius:12px;padding:8px 12px;font-weight:600} .tts{background:#fff;color:var(--bg1);border:none;border-radius:999px;padding:8px 14px;font-weight:700}
+    .fab{position:fixed;right:18px;bottom:84px;background:#000c;color:#fff;border:none;border-radius:999px;padding:13px 16px;box-shadow:0 10px 22px rgba(0,0,0,.35);z-index:30} .bottomnav{position:fixed;left:0;right:0;bottom:0;background:#0b0b16D0;backdrop-filter:blur(8px);display:flex;gap:6px;justify-content:space-around;padding:10px 16px 16px;z-index:20}
+    .navbtn{flex:1;color:#fff;background:#ffffff20;border:1px solid #ffffff33;border-radius:12px;padding:10px 8px;font-size:13px} .navbtn.active{background:#ffffff38}
+    .sheet{position:fixed;left:0;right:0;bottom:-65vh;height:65vh;background:#0c0e1a;color:#fff;border-top-left-radius:18px;border-top-right-radius:18px;box-shadow:0 -8px 26px rgba(0,0,0,.4);transition:bottom .32s;z-index:40;display:flex;flex-direction:column}
+    .sheet.open{bottom:0} .sheet header{display:flex;align-items:center;justify-content:space-between;padding:12px 14px;border-bottom:1px solid #ffffff22} .sheet header h3{margin:0;font-size:16px} .sheet .content{padding:12px 14px;overflow:auto}
+    .sheet label{font-size:12px;opacity:.9} .sheet input,.sheet select,.sheet textarea{width:100%;margin:6px 0 12px;border-radius:10px;border:1px solid #ffffff33;padding:10px;background:#0f1220;color:#fff} .sheet .actions{display:flex;gap:8px} .sheet .actions button{flex:1;border:none;border-radius:10px;padding:10px;font-weight:700}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🇵🇹 Portuguese (EU) Flashcards</h1>
+      <p>Tap to flip • Track progress • Edit on-device</p>
+    </header>
+
+    <div class="progress-wrap"><div id="progress" class="progress">0%</div></div>
+    <div class="stats">
+      <div class="stat"><div class="num" id="knownNum">0</div><div class="small">Known</div></div>
+      <div class="stat"><div class="num" id="remNum">0</div><div class="small">Remaining</div></div>
+      <div class="stat"><div class="num" id="totalNum">0</div><div class="small">Total</div></div>
+    </div>
+
+    <div class="chipbar-wrap">
+      <button class="chev left" id="leftChev">❮</button>
+      <div class="chipbar" id="chipbar"></div>
+      <button class="chev right" id="rightChev">❮</button>
+    </div>
+
+    <div class="topshell">
+      <button class="ghost" id="resetBtn">↻ Study Again</button>
+      <button class="tts" id="speakBtn">🔊 Listen</button>
+    </div>
+
+    <div class="hint">Tip: tap the card to show the back</div>
+    <div class="card-area">
+      <div class="card" id="card">
+        <div class="face front">
+          <div class="pt" id="ptFront">—</div>
+        </div>
+        <div class="face back">
+          <div class="pt" id="ptBack">—</div>
+          <div class="en" id="enBack">—</div>
+          <div class="phon" id="phonBack">—</div>
+          <div class="vars" id="varsBack" style="display:none"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <button class="btn dont" id="dontBtn">❌ Don't know</button>
+      <button class="btn know" id="knowBtn">✅ I know this</button>
+    </div>
+  </div>
+
+  <button class="fab" id="manageFab">✏️ Manage</button>
+  <nav class="bottomnav">
+    <button class="navbtn active" id="navStudy">Study</button>
+    <button class="navbtn" id="navManage">Manage</button>
+    <button class="navbtn" id="navBackup">Backup</button>
+  </nav>
+
+  <section class="sheet" id="sheet">
+    <header>
+      <h3 id="sheetTitle">Manage Cards</h3>
+      <button class="ghost" id="closeSheet">Close</button>
+    </header>
+    <div class="content">
+      <div>
+        <label>Mode</label>
+        <select id="modeSelect">
+          <option value="editCurrent">Edit current</option>
+          <option value="addNew">Add new</option>
+          <option value="deleteCurrent">Delete current</option>
+          <option value="import">Import JSON</option>
+          <option value="export">Export JSON</option>
+        </select>
+      </div>
+      <div id="formArea">
+        <label>Category</label>
+        <input id="fCategory" list="catlist" placeholder="e.g., greetings" />
+        <datalist id="catlist"></datalist>
+
+        <label>Portuguese</label>
+        <input id="fPt" placeholder="Olá" />
+
+        <label>English</label>
+        <input id="fEn" placeholder="Hello" />
+
+        <label>Phonetic</label>
+        <input id="fPhon" placeholder="oh-LAH" />
+
+        <label>Variations <span class="small">(comma-separated)</span></label>
+        <textarea id="fVar" rows="2" placeholder="masculine: um, feminine: uma"></textarea>
+      </div>
+      <input type="file" id="fileInput" accept="application/json" style="display:none" />
+
+      <div class="actions">
+        <button id="saveBtn" style="background:#22c55e;color:#fff">Save</button>
+        <button id="deleteBtn" style="background:#ef4444;color:#fff">Delete</button>
+      </div>
+      <p class="small" style="margin-top:8px">All changes are stored in your browser (localStorage). Use Export to back up and Import to restore/share.</p>
+    </div>
+  </section>
+
+  <script>
+    const embeddedDeck = [
+  {
+    "category": "Greetings",
+    "portuguese": "Olá",
+    "english": "Hello",
+    "phonetic": "oh-LAH",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "greetings",
+    "portuguese": "Bom dia",
+    "english": "Good morning",
+    "phonetic": "bohm DEE-ah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "greetings",
+    "portuguese": "Boa tarde",
+    "english": "Good afternoon",
+    "phonetic": "BOH-ah TAR-deh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "greetings",
+    "portuguese": "Boa noite",
+    "english": "Good evening/night",
+    "phonetic": "BOH-ah NOY-teh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "greetings",
+    "portuguese": "Adeus",
+    "english": "Goodbye",
+    "phonetic": "ah-DEH-oosh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "greetings",
+    "portuguese": "Até logo",
+    "english": "See you later",
+    "phonetic": "ah-TEH LOH-goo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "greetings",
+    "portuguese": "Até já",
+    "english": "See you soon",
+    "phonetic": "ah-TEH ZHAH",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "greetings",
+    "portuguese": "Até amanhã",
+    "english": "See you tomorrow",
+    "phonetic": "ah-TEH ah-mahn-YAH",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "greetings",
+    "portuguese": "Tchau",
+    "english": "Bye (informal)",
+    "phonetic": "CHOW",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "greetings",
+    "portuguese": "Como está?",
+    "english": "How are you?",
+    "phonetic": "KOH-moo ish-TAH",
+    "variations": [
+      "Como estás? (informal)"
+    ]
+  },
+  {
+    "category": "greetings",
+    "portuguese": "Bem-vindo",
+    "english": "Welcome",
+    "phonetic": "baym-VEEN-doo",
+    "variations": [
+      "Bem-vinda (f)"
+    ]
+  },
+  {
+    "category": "politeness",
+    "portuguese": "Por favor",
+    "english": "Please",
+    "phonetic": "poor fah-VOHR",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "politeness",
+    "portuguese": "Obrigado",
+    "english": "Thank you",
+    "phonetic": "oh-bree-GAH-doo",
+    "variations": [
+      "Obrigada (f)"
+    ]
+  },
+  {
+    "category": "politeness",
+    "portuguese": "De nada",
+    "english": "You're welcome",
+    "phonetic": "deh NAH-dah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "politeness",
+    "portuguese": "Com licença",
+    "english": "Excuse me",
+    "phonetic": "kohm lee-SEN-sah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "politeness",
+    "portuguese": "Desculpe",
+    "english": "Sorry",
+    "phonetic": "desh-KOOL-peh",
+    "variations": [
+      "Desculpa (informal)"
+    ]
+  },
+  {
+    "category": "politeness",
+    "portuguese": "Perdão",
+    "english": "Pardon",
+    "phonetic": "pehr-DOUN",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "politeness",
+    "portuguese": "Muito obrigado",
+    "english": "Thank you very much",
+    "phonetic": "MWEEN-too oh-bree-GAH-doo",
+    "variations": [
+      "Muito obrigada (f)"
+    ]
+  },
+  {
+    "category": "politeness",
+    "portuguese": "Se faz favor",
+    "english": "Please (formal)",
+    "phonetic": "seh fahsh fah-VOHR",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "politeness",
+    "portuguese": "Não faz mal",
+    "english": "No problem",
+    "phonetic": "nown fahsh mahl",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "introductions",
+    "portuguese": "Chamo-me",
+    "english": "My name is",
+    "phonetic": "SHAH-moo-meh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "introductions",
+    "portuguese": "Como se chama?",
+    "english": "What's your name?",
+    "phonetic": "KOH-moo seh SHAH-mah",
+    "variations": [
+      "Como te chamas? (informal)"
+    ]
+  },
+  {
+    "category": "introductions",
+    "portuguese": "Prazer em conhecê-lo",
+    "english": "Nice to meet you",
+    "phonetic": "prah-ZEHR aym kohn-yeh-SEH-loo",
+    "variations": [
+      "conhecê-la (f)"
+    ]
+  },
+  {
+    "category": "introductions",
+    "portuguese": "Sou de",
+    "english": "I'm from",
+    "phonetic": "soh deh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "introductions",
+    "portuguese": "Tenho...anos",
+    "english": "I am...years old",
+    "phonetic": "TEN-yoo AH-noosh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "introductions",
+    "portuguese": "Falo português",
+    "english": "I speak Portuguese",
+    "phonetic": "FAH-loo poor-too-GAYSH",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "introductions",
+    "portuguese": "Não falo português",
+    "english": "I don't speak Portuguese",
+    "phonetic": "nown FAH-loo poor-too-GAYSH",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "introductions",
+    "portuguese": "Fala inglês?",
+    "english": "Do you speak English?",
+    "phonetic": "FAH-lah een-GLAYSH",
+    "variations": [
+      "Falas inglês? (informal)"
+    ]
+  },
+  {
+    "category": "introductions",
+    "portuguese": "Sou estudante",
+    "english": "I'm a student",
+    "phonetic": "soh esh-too-DAHN-teh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "introductions",
+    "portuguese": "Estou de férias",
+    "english": "I'm on vacation",
+    "phonetic": "ish-TOH deh FEH-ree-ahsh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "alphabet",
+    "portuguese": "A",
+    "english": "A",
+    "phonetic": "ah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "alphabet",
+    "portuguese": "B",
+    "english": "B",
+    "phonetic": "beh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "alphabet",
+    "portuguese": "C",
+    "english": "C",
+    "phonetic": "seh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "alphabet",
+    "portuguese": "D",
+    "english": "D",
+    "phonetic": "deh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "alphabet",
+    "portuguese": "E",
+    "english": "E",
+    "phonetic": "eh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "alphabet",
+    "portuguese": "F",
+    "english": "F",
+    "phonetic": "EH-feh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "alphabet",
+    "portuguese": "G",
+    "english": "G",
+    "phonetic": "zheh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "alphabet",
+    "portuguese": "H",
+    "english": "H",
+    "phonetic": "ah-GAH",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "alphabet",
+    "portuguese": "I",
+    "english": "I",
+    "phonetic": "ee",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "alphabet",
+    "portuguese": "J",
+    "english": "J",
+    "phonetic": "ZHOH-tah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "alphabet",
+    "portuguese": "K",
+    "english": "K",
+    "phonetic": "kah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "alphabet",
+    "portuguese": "L",
+    "english": "L",
+    "phonetic": "EH-leh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "alphabet",
+    "portuguese": "M",
+    "english": "M",
+    "phonetic": "EH-meh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "alphabet",
+    "portuguese": "N",
+    "english": "N",
+    "phonetic": "EH-neh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "alphabet",
+    "portuguese": "O",
+    "english": "O",
+    "phonetic": "oh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "alphabet",
+    "portuguese": "P",
+    "english": "P",
+    "phonetic": "peh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "alphabet",
+    "portuguese": "Q",
+    "english": "Q",
+    "phonetic": "keh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "alphabet",
+    "portuguese": "R",
+    "english": "R",
+    "phonetic": "EH-heh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "alphabet",
+    "portuguese": "S",
+    "english": "S",
+    "phonetic": "EH-seh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "alphabet",
+    "portuguese": "T",
+    "english": "T",
+    "phonetic": "teh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "alphabet",
+    "portuguese": "U",
+    "english": "U",
+    "phonetic": "oo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "alphabet",
+    "portuguese": "V",
+    "english": "V",
+    "phonetic": "veh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "alphabet",
+    "portuguese": "W",
+    "english": "W",
+    "phonetic": "DAH-bloo-veh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "alphabet",
+    "portuguese": "X",
+    "english": "X",
+    "phonetic": "sheesh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "alphabet",
+    "portuguese": "Y",
+    "english": "Y",
+    "phonetic": "EEP-see-lohn",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "alphabet",
+    "portuguese": "Z",
+    "english": "Z",
+    "phonetic": "zeh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "numbers",
+    "portuguese": "Zero",
+    "english": "Zero",
+    "phonetic": "ZEH-roo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "numbers",
+    "portuguese": "Um",
+    "english": "One",
+    "phonetic": "oom",
+    "variations": [
+      "Uma (f)"
+    ]
+  },
+  {
+    "category": "numbers",
+    "portuguese": "Dois",
+    "english": "Two",
+    "phonetic": "doysh",
+    "variations": [
+      "Duas (f)"
+    ]
+  },
+  {
+    "category": "numbers",
+    "portuguese": "Três",
+    "english": "Three",
+    "phonetic": "trehsh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "numbers",
+    "portuguese": "Quatro",
+    "english": "Four",
+    "phonetic": "KWAH-troo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "numbers",
+    "portuguese": "Cinco",
+    "english": "Five",
+    "phonetic": "SEEN-koo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "numbers",
+    "portuguese": "Seis",
+    "english": "Six",
+    "phonetic": "saysh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "numbers",
+    "portuguese": "Sete",
+    "english": "Seven",
+    "phonetic": "SEH-teh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "numbers",
+    "portuguese": "Oito",
+    "english": "Eight",
+    "phonetic": "OY-too",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "numbers",
+    "portuguese": "Nove",
+    "english": "Nine",
+    "phonetic": "NOH-veh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "numbers",
+    "portuguese": "Dez",
+    "english": "Ten",
+    "phonetic": "dehsh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "numbers",
+    "portuguese": "Onze",
+    "english": "Eleven",
+    "phonetic": "OHN-zeh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "numbers",
+    "portuguese": "Doze",
+    "english": "Twelve",
+    "phonetic": "DOH-zeh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "numbers",
+    "portuguese": "Treze",
+    "english": "Thirteen",
+    "phonetic": "TREH-zeh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "numbers",
+    "portuguese": "Catorze",
+    "english": "Fourteen",
+    "phonetic": "kah-TOHR-zeh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "numbers",
+    "portuguese": "Quinze",
+    "english": "Fifteen",
+    "phonetic": "KEEN-zeh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "numbers",
+    "portuguese": "Vinte",
+    "english": "Twenty",
+    "phonetic": "VEEN-teh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "numbers",
+    "portuguese": "Trinta",
+    "english": "Thirty",
+    "phonetic": "TREEN-tah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "numbers",
+    "portuguese": "Quarenta",
+    "english": "Forty",
+    "phonetic": "kwah-REN-tah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "numbers",
+    "portuguese": "Cinquenta",
+    "english": "Fifty",
+    "phonetic": "seen-KWEN-tah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "numbers",
+    "portuguese": "Cem",
+    "english": "One hundred",
+    "phonetic": "saym",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "numbers",
+    "portuguese": "Mil",
+    "english": "One thousand",
+    "phonetic": "meel",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "numbers",
+    "portuguese": "Primeiro",
+    "english": "First",
+    "phonetic": "pree-MAY-roo",
+    "variations": [
+      "Primeira (f)"
+    ]
+  },
+  {
+    "category": "numbers",
+    "portuguese": "Segundo",
+    "english": "Second",
+    "phonetic": "seh-GOON-doo",
+    "variations": [
+      "Segunda (f)"
+    ]
+  },
+  {
+    "category": "numbers",
+    "portuguese": "Terceiro",
+    "english": "Third",
+    "phonetic": "tehr-SAY-roo",
+    "variations": [
+      "Terceira (f)"
+    ]
+  },
+  {
+    "category": "time",
+    "portuguese": "Que horas são?",
+    "english": "What time is it?",
+    "phonetic": "keh OH-rahsh sown",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "time",
+    "portuguese": "É uma hora",
+    "english": "It's one o'clock",
+    "phonetic": "eh OO-mah OH-rah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "time",
+    "portuguese": "São duas horas",
+    "english": "It's two o'clock",
+    "phonetic": "sown DOO-ahsh OH-rahsh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "time",
+    "portuguese": "Meio-dia",
+    "english": "Noon",
+    "phonetic": "MAY-oo DEE-ah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "time",
+    "portuguese": "Meia-noite",
+    "english": "Midnight",
+    "phonetic": "MAY-ah NOY-teh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "time",
+    "portuguese": "Manhã",
+    "english": "Morning",
+    "phonetic": "mahn-YAH",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "time",
+    "portuguese": "Tarde",
+    "english": "Afternoon",
+    "phonetic": "TAR-deh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "time",
+    "portuguese": "Noite",
+    "english": "Night",
+    "phonetic": "NOY-teh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "time",
+    "portuguese": "Hoje",
+    "english": "Today",
+    "phonetic": "OH-zheh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "time",
+    "portuguese": "Ontem",
+    "english": "Yesterday",
+    "phonetic": "OHN-taym",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "time",
+    "portuguese": "Amanhã",
+    "english": "Tomorrow",
+    "phonetic": "ah-mahn-YAH",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "time",
+    "portuguese": "Agora",
+    "english": "Now",
+    "phonetic": "ah-GOH-rah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "time",
+    "portuguese": "Mais tarde",
+    "english": "Later",
+    "phonetic": "mahysh TAR-deh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "time",
+    "portuguese": "Cedo",
+    "english": "Early",
+    "phonetic": "SEH-doo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "days & months",
+    "portuguese": "Segunda-feira",
+    "english": "Monday",
+    "phonetic": "seh-GOON-dah FAY-rah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "days & months",
+    "portuguese": "Terça-feira",
+    "english": "Tuesday",
+    "phonetic": "TEHR-sah FAY-rah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "days & months",
+    "portuguese": "Quarta-feira",
+    "english": "Wednesday",
+    "phonetic": "KWAR-tah FAY-rah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "days & months",
+    "portuguese": "Quinta-feira",
+    "english": "Thursday",
+    "phonetic": "KEEN-tah FAY-rah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "days & months",
+    "portuguese": "Sexta-feira",
+    "english": "Friday",
+    "phonetic": "SAYSH-tah FAY-rah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "days & months",
+    "portuguese": "Sábado",
+    "english": "Saturday",
+    "phonetic": "SAH-bah-doo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "days & months",
+    "portuguese": "Domingo",
+    "english": "Sunday",
+    "phonetic": "doo-MEEN-goo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "days & months",
+    "portuguese": "Janeiro",
+    "english": "January",
+    "phonetic": "zhah-NAY-roo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "days & months",
+    "portuguese": "Fevereiro",
+    "english": "February",
+    "phonetic": "feh-veh-RAY-roo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "days & months",
+    "portuguese": "Março",
+    "english": "March",
+    "phonetic": "MAR-soo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "days & months",
+    "portuguese": "Abril",
+    "english": "April",
+    "phonetic": "ah-BREEL",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "days & months",
+    "portuguese": "Maio",
+    "english": "May",
+    "phonetic": "MAH-yoo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "days & months",
+    "portuguese": "Junho",
+    "english": "June",
+    "phonetic": "ZHOON-yoo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "days & months",
+    "portuguese": "Julho",
+    "english": "July",
+    "phonetic": "ZHOOL-yoo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "days & months",
+    "portuguese": "Agosto",
+    "english": "August",
+    "phonetic": "ah-GOHSH-too",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "days & months",
+    "portuguese": "Setembro",
+    "english": "September",
+    "phonetic": "seh-TEM-broo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "days & months",
+    "portuguese": "Outubro",
+    "english": "October",
+    "phonetic": "oh-TOO-broo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "days & months",
+    "portuguese": "Novembro",
+    "english": "November",
+    "phonetic": "noo-VEM-broo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "days & months",
+    "portuguese": "Dezembro",
+    "english": "December",
+    "phonetic": "deh-ZEM-broo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "food & drink",
+    "portuguese": "Pão",
+    "english": "Bread",
+    "phonetic": "pown",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "food & drink",
+    "portuguese": "Água",
+    "english": "Water",
+    "phonetic": "AH-gwah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "food & drink",
+    "portuguese": "Café",
+    "english": "Coffee",
+    "phonetic": "kah-FEH",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "food & drink",
+    "portuguese": "Chá",
+    "english": "Tea",
+    "phonetic": "shah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "food & drink",
+    "portuguese": "Leite",
+    "english": "Milk",
+    "phonetic": "LAY-teh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "food & drink",
+    "portuguese": "Vinho",
+    "english": "Wine",
+    "phonetic": "VEEN-yoo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "food & drink",
+    "portuguese": "Cerveja",
+    "english": "Beer",
+    "phonetic": "sehr-VAY-zhah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "food & drink",
+    "portuguese": "Sumo",
+    "english": "Juice",
+    "phonetic": "SOO-moo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "food & drink",
+    "portuguese": "Carne",
+    "english": "Meat",
+    "phonetic": "KAR-neh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "food & drink",
+    "portuguese": "Peixe",
+    "english": "Fish",
+    "phonetic": "PAY-sheh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "food & drink",
+    "portuguese": "Frango",
+    "english": "Chicken",
+    "phonetic": "FRAHN-goo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "food & drink",
+    "portuguese": "Arroz",
+    "english": "Rice",
+    "phonetic": "ah-HOHSH",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "food & drink",
+    "portuguese": "Batatas",
+    "english": "Potatoes",
+    "phonetic": "bah-TAH-tahsh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "food & drink",
+    "portuguese": "Salada",
+    "english": "Salad",
+    "phonetic": "sah-LAH-dah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "food & drink",
+    "portuguese": "Sopa",
+    "english": "Soup",
+    "phonetic": "SOH-pah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "food & drink",
+    "portuguese": "Queijo",
+    "english": "Cheese",
+    "phonetic": "KAY-zhoo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "food & drink",
+    "portuguese": "Ovos",
+    "english": "Eggs",
+    "phonetic": "OH-voosh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "food & drink",
+    "portuguese": "Pequeno-almoço",
+    "english": "Breakfast",
+    "phonetic": "peh-KAY-noo ahl-MOH-soo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "food & drink",
+    "portuguese": "Almoço",
+    "english": "Lunch",
+    "phonetic": "ahl-MOH-soo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "food & drink",
+    "portuguese": "Jantar",
+    "english": "Dinner",
+    "phonetic": "zhahn-TAR",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "food & drink",
+    "portuguese": "A conta",
+    "english": "The bill",
+    "phonetic": "ah KOHN-tah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "food & drink",
+    "portuguese": "Menu",
+    "english": "Menu",
+    "phonetic": "meh-NOO",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "transport",
+    "portuguese": "Carro",
+    "english": "Car",
+    "phonetic": "KAH-hoo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "transport",
+    "portuguese": "Autocarro",
+    "english": "Bus",
+    "phonetic": "ow-too-KAH-hoo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "transport",
+    "portuguese": "Comboio",
+    "english": "Train",
+    "phonetic": "kohm-BOY-oo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "transport",
+    "portuguese": "Metro",
+    "english": "Subway",
+    "phonetic": "MEH-troo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "transport",
+    "portuguese": "Táxi",
+    "english": "Taxi",
+    "phonetic": "TAHK-see",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "transport",
+    "portuguese": "Avião",
+    "english": "Airplane",
+    "phonetic": "ah-vee-OWN",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "transport",
+    "portuguese": "Barco",
+    "english": "Boat",
+    "phonetic": "BAR-koo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "transport",
+    "portuguese": "Bilhete",
+    "english": "Ticket",
+    "phonetic": "beel-YEH-teh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "transport",
+    "portuguese": "Estação",
+    "english": "Station",
+    "phonetic": "ish-tah-SOWN",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "transport",
+    "portuguese": "Aeroporto",
+    "english": "Airport",
+    "phonetic": "ah-eh-roo-POHR-too",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "transport",
+    "portuguese": "Paragem",
+    "english": "Stop",
+    "phonetic": "pah-RAH-zhaym",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "transport",
+    "portuguese": "Chegada",
+    "english": "Arrival",
+    "phonetic": "sheh-GAH-dah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "transport",
+    "portuguese": "Partida",
+    "english": "Departure",
+    "phonetic": "par-TEE-dah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "directions",
+    "portuguese": "Onde é?",
+    "english": "Where is?",
+    "phonetic": "OHN-deh eh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "directions",
+    "portuguese": "Onde fica?",
+    "english": "Where is located?",
+    "phonetic": "OHN-deh FEE-kah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "directions",
+    "portuguese": "À direita",
+    "english": "To the right",
+    "phonetic": "ah dee-RAY-tah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "directions",
+    "portuguese": "À esquerda",
+    "english": "To the left",
+    "phonetic": "ah ish-KEHR-dah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "directions",
+    "portuguese": "Em frente",
+    "english": "Straight ahead",
+    "phonetic": "aym FREN-teh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "directions",
+    "portuguese": "Atrás",
+    "english": "Behind",
+    "phonetic": "ah-TRAHSH",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "directions",
+    "portuguese": "Perto",
+    "english": "Near",
+    "phonetic": "PEHR-too",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "directions",
+    "portuguese": "Longe",
+    "english": "Far",
+    "phonetic": "LOHN-zheh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "directions",
+    "portuguese": "Norte",
+    "english": "North",
+    "phonetic": "NOHR-teh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "directions",
+    "portuguese": "Sul",
+    "english": "South",
+    "phonetic": "sool",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "directions",
+    "portuguese": "Este",
+    "english": "East",
+    "phonetic": "ESH-teh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "directions",
+    "portuguese": "Oeste",
+    "english": "West",
+    "phonetic": "oh-ESH-teh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "directions",
+    "portuguese": "Rua",
+    "english": "Street",
+    "phonetic": "HOO-ah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "directions",
+    "portuguese": "Praça",
+    "english": "Square",
+    "phonetic": "PRAH-sah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "shopping",
+    "portuguese": "Quanto custa?",
+    "english": "How much?",
+    "phonetic": "KWAHN-too KOOSH-tah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "shopping",
+    "portuguese": "Caro",
+    "english": "Expensive",
+    "phonetic": "KAH-roo",
+    "variations": [
+      "Cara (f)"
+    ]
+  },
+  {
+    "category": "shopping",
+    "portuguese": "Barato",
+    "english": "Cheap",
+    "phonetic": "bah-RAH-too",
+    "variations": [
+      "Barata (f)"
+    ]
+  },
+  {
+    "category": "shopping",
+    "portuguese": "Dinheiro",
+    "english": "Money",
+    "phonetic": "deen-YAY-roo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "shopping",
+    "portuguese": "Cartão",
+    "english": "Card",
+    "phonetic": "kar-TOWN",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "shopping",
+    "portuguese": "Loja",
+    "english": "Store",
+    "phonetic": "LOH-zhah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "shopping",
+    "portuguese": "Mercado",
+    "english": "Market",
+    "phonetic": "mehr-KAH-doo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "shopping",
+    "portuguese": "Supermercado",
+    "english": "Supermarket",
+    "phonetic": "soo-pehr-mehr-KAH-doo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "shopping",
+    "portuguese": "Farmácia",
+    "english": "Pharmacy",
+    "phonetic": "far-MAH-see-ah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "shopping",
+    "portuguese": "Aberto",
+    "english": "Open",
+    "phonetic": "ah-BEHR-too",
+    "variations": [
+      "Aberta (f)"
+    ]
+  },
+  {
+    "category": "shopping",
+    "portuguese": "Fechado",
+    "english": "Closed",
+    "phonetic": "feh-SHAH-doo",
+    "variations": [
+      "Fechada (f)"
+    ]
+  },
+  {
+    "category": "shopping",
+    "portuguese": "Desconto",
+    "english": "Discount",
+    "phonetic": "desh-KOHN-too",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "shopping",
+    "portuguese": "Troco",
+    "english": "Change",
+    "phonetic": "TROH-koo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "shopping",
+    "portuguese": "Recibo",
+    "english": "Receipt",
+    "phonetic": "heh-SEE-boo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "lodging",
+    "portuguese": "Hotel",
+    "english": "Hotel",
+    "phonetic": "oh-TEHL",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "lodging",
+    "portuguese": "Quarto",
+    "english": "Room",
+    "phonetic": "KWAR-too",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "lodging",
+    "portuguese": "Reserva",
+    "english": "Reservation",
+    "phonetic": "heh-ZEHR-vah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "lodging",
+    "portuguese": "Chave",
+    "english": "Key",
+    "phonetic": "SHAH-veh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "lodging",
+    "portuguese": "Casa de banho",
+    "english": "Bathroom",
+    "phonetic": "KAH-zah deh BAHN-yoo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "lodging",
+    "portuguese": "Cama",
+    "english": "Bed",
+    "phonetic": "KAH-mah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "lodging",
+    "portuguese": "Toalha",
+    "english": "Towel",
+    "phonetic": "too-AHL-yah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "lodging",
+    "portuguese": "Ar condicionado",
+    "english": "Air conditioning",
+    "phonetic": "ahr kohn-dee-see-oh-NAH-doo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "lodging",
+    "portuguese": "Pequeno-almoço incluído?",
+    "english": "Breakfast included?",
+    "phonetic": "peh-KAY-noo ahl-MOH-soo een-kloo-EE-doo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "lodging",
+    "portuguese": "Wi-Fi",
+    "english": "Wi-Fi",
+    "phonetic": "wee-fee",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "lodging",
+    "portuguese": "Elevador",
+    "english": "Elevator",
+    "phonetic": "eh-leh-vah-DOHR",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "lodging",
+    "portuguese": "Recepção",
+    "english": "Reception",
+    "phonetic": "heh-seh-SOWN",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "emergency",
+    "portuguese": "Ajuda!",
+    "english": "Help!",
+    "phonetic": "ah-ZHOO-dah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "emergency",
+    "portuguese": "Socorro!",
+    "english": "Help!",
+    "phonetic": "soo-KOH-hoo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "emergency",
+    "portuguese": "Emergência",
+    "english": "Emergency",
+    "phonetic": "eh-mehr-ZHEN-see-ah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "emergency",
+    "portuguese": "Polícia",
+    "english": "Police",
+    "phonetic": "poo-LEE-see-ah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "emergency",
+    "portuguese": "Hospital",
+    "english": "Hospital",
+    "phonetic": "osh-pee-TAHL",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "emergency",
+    "portuguese": "Médico",
+    "english": "Doctor",
+    "phonetic": "MEH-dee-koo",
+    "variations": [
+      "Médica (f)"
+    ]
+  },
+  {
+    "category": "emergency",
+    "portuguese": "Ambulância",
+    "english": "Ambulance",
+    "phonetic": "ahm-boo-LAHN-see-ah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "emergency",
+    "portuguese": "Fogo!",
+    "english": "Fire!",
+    "phonetic": "FOH-goo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "emergency",
+    "portuguese": "Ladrão!",
+    "english": "Thief!",
+    "phonetic": "lah-DROWN",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "emergency",
+    "portuguese": "Estou doente",
+    "english": "I'm sick",
+    "phonetic": "ish-TOH doo-EN-teh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "emergency",
+    "portuguese": "Dói",
+    "english": "It hurts",
+    "phonetic": "doy",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "emergency",
+    "portuguese": "Remédio",
+    "english": "Medicine",
+    "phonetic": "heh-MEH-dee-oo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "misc",
+    "portuguese": "Sim",
+    "english": "Yes",
+    "phonetic": "seem",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "misc",
+    "portuguese": "Não",
+    "english": "No",
+    "phonetic": "nown",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "misc",
+    "portuguese": "Talvez",
+    "english": "Maybe",
+    "phonetic": "tahl-VEHSH",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "misc",
+    "portuguese": "Sempre",
+    "english": "Always",
+    "phonetic": "SEM-preh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "misc",
+    "portuguese": "Nunca",
+    "english": "Never",
+    "phonetic": "NOON-kah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "misc",
+    "portuguese": "Muito",
+    "english": "Very/Much",
+    "phonetic": "MWEEN-too",
+    "variations": [
+      "Muita (f)"
+    ]
+  },
+  {
+    "category": "misc",
+    "portuguese": "Pouco",
+    "english": "Little/Few",
+    "phonetic": "POH-koo",
+    "variations": [
+      "Pouca (f)"
+    ]
+  },
+  {
+    "category": "misc",
+    "portuguese": "Grande",
+    "english": "Big",
+    "phonetic": "GRAHN-deh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "misc",
+    "portuguese": "Pequeno",
+    "english": "Small",
+    "phonetic": "peh-KAY-noo",
+    "variations": [
+      "Pequena (f)"
+    ]
+  },
+  {
+    "category": "misc",
+    "portuguese": "Bom",
+    "english": "Good",
+    "phonetic": "bohm",
+    "variations": [
+      "Boa (f)"
+    ]
+  },
+  {
+    "category": "misc",
+    "portuguese": "Mau",
+    "english": "Bad",
+    "phonetic": "mow",
+    "variations": [
+      "Má (f)"
+    ]
+  }
+];
+
+    const LS_KEY = "pt_flashcards_deck_v3";
+    function loadDeck(){ 
+      const raw = localStorage.getItem(LS_KEY); 
+      return raw ? JSON.parse(raw) : embeddedDeck.slice(); 
+    }
+    function saveDeck(deck){ localStorage.setItem(LS_KEY, JSON.stringify(deck)); }
+
+    let deck = loadDeck();
+    let filtered = deck.slice();
+    let idx = 0;
+    let currentCategory = "all";
+
+    const chipbar = document.getElementById('chipbar');
+    const leftChev = document.getElementById('leftChev');
+    const rightChev = document.getElementById('rightChev');
+
+    const ptF = document.getElementById('ptFront');
+    const ptB = document.getElementById('ptBack');
+    const enB = document.getElementById('enBack');
+    const phB = document.getElementById('phonBack');
+    const varsB = document.getElementById('varsBack');
+    const card = document.getElementById('card');
+    const progress = document.getElementById('progress');
+    const knownNum = document.getElementById('knownNum');
+    const remNum = document.getElementById('remNum');
+    const totalNum = document.getElementById('totalNum');
+
+    function escapeHTML(s){ 
+      const map = {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'};
+      return s.replace(/[&<>"']/g, m => map[m]);
+    }
+
+    function categoriesFrom(deck){ 
+      return Array.from(new Set(deck.map(d=>(String(d.category||'miscellaneous').trim().toLowerCase())))).sort(); 
+    }
+    function renderChips(){
+      chipbar.innerHTML = "";
+      const cats = ["all", ...categoriesFrom(deck)];
+      cats.forEach(cat=>{
+        const b = document.createElement('button');
+        b.className = "chip" + (cat===currentCategory ? " active": "");
+        b.textContent = (cat==="all" ? "All" : cat.replace(/\b\w/g, m=>m.toUpperCase()));
+        b.onclick = ()=>{ currentCategory = cat; filterDeck(); renderChips(); idx=0; renderCard(); updateStats(); };
+        chipbar.appendChild(b);
+      });
+      // datalist
+      const catlist = document.getElementById('catlist');
+      catlist.innerHTML = cats.filter(c=>c!=="all").map(c=>`<option value="${c}">`).join("");
+    }
+
+    function scrollChips(delta){ chipbar.scrollBy({left: delta, behavior:"smooth"}); }
+    leftChev.addEventListener('click', ()=>scrollChips(-180));
+    rightChev.addEventListener('click', ()=>scrollChips(180));
+
+    // drag-to-scroll
+    let isDown=false, startX=0, scrollLeft=0;
+    chipbar.addEventListener('mousedown', (e)=>{ isDown=true; startX=e.pageX - chipbar.offsetLeft; scrollLeft=chipbar.scrollLeft; });
+    document.addEventListener('mouseup', ()=>{ isDown=false; });
+    chipbar.addEventListener('mouseleave', ()=>{ isDown=false; });
+    chipbar.addEventListener('mousemove', (e)=>{
+      if(!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - chipbar.offsetLeft;
+      const walk = (x - startX) * 1.2;
+      chipbar.scrollLeft = scrollLeft - walk;
+    });
+    chipbar.addEventListener('touchstart', (e)=>{ isDown=true; startX=e.touches[0].pageX; scrollLeft=chipbar.scrollLeft; }, {passive:true});
+    chipbar.addEventListener('touchmove', (e)=>{
+      if(!isDown) return;
+      const x = e.touches[0].pageX;
+      const walk = (x - startX) * 1.2;
+      chipbar.scrollLeft = scrollLeft - walk;
+    }, {passive:true});
+    chipbar.addEventListener('touchend', ()=>{ isDown=false; });
+
+    function filterDeck(){
+      filtered = currentCategory==="all" ? deck.slice() : deck.filter(d=>String(d.category||'').trim().toLowerCase()===currentCategory);
+      if(filtered.length===0){ idx=0; }
+    }
+
+    function renderCard(){
+      if(filtered.length===0){
+        ptF.textContent = "No cards";
+        ptB.textContent = "No cards";
+        enB.textContent = "—";
+        phB.textContent = "—";
+        varsB.style.display = "none";
+        varsB.innerHTML = "";
+        return;
+      }
+      const item = filtered[idx];
+      ptF.textContent = item.portuguese || "—";
+      ptB.textContent = item.portuguese || "—";
+      enB.textContent = item.english || "—";
+      phB.textContent = item.phonetic || "";
+
+      const v = Array.isArray(item.variations) ? item.variations.filter(Boolean) : [];
+      if(v.length){ varsB.style.display = "block"; varsB.innerHTML = v.map(x=>`<span class="tag">${escapeHTML(String(x))}</span>`).join(""); }
+      else{ varsB.style.display = "none"; varsB.innerHTML = ""; }
+    }
+
+    function updateStats(){
+      const total = filtered.length;
+      const knownCount = 0;
+      const remaining = Math.max(total-knownCount,0);
+      totalNum.textContent = total;
+      knownNum.textContent = knownCount;
+      remNum.textContent = remaining;
+      const pct = total ? Math.round((knownCount/total)*100) : 0;
+      progress.style.width = pct+"%";
+      progress.textContent = pct+"%";
+    }
+
+    function flip(){ card.classList.toggle('flipped'); }
+    card.addEventListener('click', flip);
+
+    function next(){ idx = (idx+1) % (filtered.length || 1); card.classList.remove('flipped'); renderCard(); updateStats(); }
+    document.getElementById('dontBtn').addEventListener('click', next);
+    document.getElementById('knowBtn').addEventListener('click', next);
+    document.getElementById('resetBtn').addEventListener('click', ()=>{ idx=0; renderCard(); updateStats(); });
+
+    // TTS
+    function speak(text){
+      try{
+        const u=new SpeechSynthesisUtterance(text);
+        const vs=speechSynthesis.getVoices();
+        const pt=vs.find(v=>/portuguese/i.test(v.lang)||/pt-PT/i.test(v.lang));
+        if(pt) u.voice=pt;
+        u.lang=(pt&&pt.lang)||'pt-PT';
+        speechSynthesis.cancel(); speechSynthesis.speak(u);
+      }catch(e){}
+    }
+    document.getElementById('speakBtn').addEventListener('click', ()=>{ if(filtered.length) speak(filtered[idx].portuguese||''); });
+
+    // Manage
+    const sheetEl = document.getElementById('sheet');
+    function openSheet(){ sheetEl.classList.add('open'); populateFormFromCurrent(); }
+    function closeSheetFn(){ sheetEl.classList.remove('open'); }
+    document.getElementById('manageFab').addEventListener('click', openSheet);
+    document.getElementById('closeSheet').addEventListener('click', closeSheetFn);
+    document.getElementById('navStudy').addEventListener('click', ()=>{ sheetEl.classList.remove('open'); setActiveNav('navStudy'); });
+    document.getElementById('navManage').addEventListener('click', ()=>{ openSheet(); setActiveNav('navManage'); });
+    document.getElementById('navBackup').addEventListener('click', ()=>{ setActiveNav('navBackup'); modeSelect.value='export'; handleModeChange(); openSheet(); });
+    function setActiveNav(id){ document.querySelectorAll('.navbtn').forEach(b=>b.classList.remove('active')); document.getElementById(id).classList.add('active'); }
+
+    const modeSelect = document.getElementById('modeSelect');
+    const formArea = document.getElementById('formArea');
+    const fileInput = document.getElementById('fileInput');
+    const saveBtn = document.getElementById('saveBtn');
+    const deleteBtn = document.getElementById('deleteBtn');
+    const fCategory = document.getElementById('fCategory');
+    const fPt = document.getElementById('fPt');
+    const fEn = document.getElementById('fEn');
+    const fPhon = document.getElementById('fPhon');
+    const fVar = document.getElementById('fVar');
+    const catlist = document.getElementById('catlist');
+
+    function populateFormFromCurrent(){ 
+      if(filtered.length===0){ fCategory.value=''; fPt.value=''; fEn.value=''; fPhon.value=''; fVar.value=''; return; }
+      const it = filtered[idx];
+      fCategory.value = it.category || '';
+      fPt.value = it.portuguese || '';
+      fEn.value = it.english || '';
+      fPhon.value = it.phonetic || '';
+      fVar.value = Array.isArray(it.variations) ? it.variations.join(', ') : '';
+    }
+
+    modeSelect.addEventListener('change', handleModeChange);
+    function handleModeChange(){
+      const mode = modeSelect.value;
+      fileInput.style.display = (mode==='import') ? 'block' : 'none';
+      formArea.style.display = (mode==='import' || mode==='export' || mode==='deleteCurrent') ? 'none' : 'block';
+      saveBtn.style.display = (mode==='editCurrent' || mode==='addNew' || mode==='import') ? 'inline-block' : 'none';
+      deleteBtn.style.display = (mode==='deleteCurrent') ? 'inline-block' : 'none';
+
+      if(mode==='export'){
+        const blob = new Blob([JSON.stringify(deck,null,2)], {type:'application/json'});
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a'); a.href=url; a.download='pt-flashcards-backup.json'; a.click(); URL.revokeObjectURL(url);
+      }
+      if(mode==='import'){
+        fileInput.onchange = (e)=>{
+          const f = e.target.files[0]; if(!f) return;
+          const reader = new FileReader();
+          reader.onload = ()=>{
+            try{
+              const data = JSON.parse(reader.result);
+              if(Array.isArray(data)){
+                deck = data.map(row => ({ 
+                  ...row,
+                  variations: Array.isArray(row.variations) ? row.variations
+                    : (typeof row.variations === 'string' && row.variations.trim().length ? row.variations.split(/\s*,\s*/).filter(Boolean) : [])
+                }));
+                saveDeck(deck);
+                currentCategory='all';
+                filterDeck(); renderChips(); idx=0; renderCard(); updateStats();
+                alert('Import successful. Deck replaced.');
+              }
+            }catch(err){ alert('Could not parse JSON.'); }
+          };
+          reader.readAsText(f);
+        };
+      }
+    }
+
+    document.getElementById('saveBtn').addEventListener('click', ()=>{
+      const mode = modeSelect.value;
+      if(mode==='editCurrent' && filtered.length){
+        const it = filtered[idx];
+        it.category = (fCategory.value||it.category||'miscellaneous').trim();
+        it.portuguese = (fPt.value||it.portuguese||'').trim();
+        it.english = (fEn.value||it.english||'').trim();
+        it.phonetic = (fPhon.value||'').trim();
+        it.variations = fVar.value.trim().length ? fVar.value.split(/\s*,\s*/).filter(Boolean) : [];
+        const masterIndex = deck.indexOf(filtered[idx]);
+        if(masterIndex>=0) deck[masterIndex] = {...it};
+        saveDeck(deck); filterDeck(); renderChips(); renderCard(); alert('Saved changes.');
+      }
+      if(mode==='addNew'){
+        const newItem = {
+          category: (fCategory.value||'miscellaneous').trim(),
+          portuguese: (fPt.value||'—').trim(),
+          english: (fEn.value||'—').trim(),
+          phonetic: (fPhon.value||'').trim(),
+          variations: fVar.value.trim().length ? fVar.value.split(/\s*,\s*/).filter(Boolean) : []
+        };
+        deck.push(newItem); saveDeck(deck); filterDeck(); renderChips(); idx = filtered.length-1; renderCard(); updateStats(); alert('Added new card.');
+      }
+    });
+
+    document.getElementById('deleteBtn').addEventListener('click', ()=>{
+      if(!filtered.length) return;
+      if(!confirm('Delete this card?')) return;
+      const masterIndex = deck.indexOf(filtered[idx]);
+      if(masterIndex>=0) deck.splice(masterIndex,1);
+      saveDeck(deck); filterDeck(); idx=0; renderChips(); renderCard(); updateStats();
+    });
+
+    function filterDeckInitialFix(){
+      // Normalize categories on first run
+      deck = deck.map(d => ({...d, category: String(d.category||'miscellaneous').trim().toLowerCase()}));
+      saveDeck(deck);
+    }
+
+    function init(){
+      filterDeckInitialFix();
+      filterDeck();
+      renderChips();
+      renderCard();
+      updateStats();
+    }
+    window.addEventListener('DOMContentLoaded', init);
+  </script>
+</body>
+</html>

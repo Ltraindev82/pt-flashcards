@@ -1,0 +1,1910 @@
+[
+  {
+    "category": "Greetings",
+    "portuguese": "Olá",
+    "english": "Hello",
+    "phonetic": "oh-LAH",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "greetings",
+    "portuguese": "Bom dia",
+    "english": "Good morning",
+    "phonetic": "bohm DEE-ah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "greetings",
+    "portuguese": "Boa tarde",
+    "english": "Good afternoon",
+    "phonetic": "BOH-ah TAR-deh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "greetings",
+    "portuguese": "Boa noite",
+    "english": "Good evening/night",
+    "phonetic": "BOH-ah NOY-teh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "greetings",
+    "portuguese": "Adeus",
+    "english": "Goodbye",
+    "phonetic": "ah-DEH-oosh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "greetings",
+    "portuguese": "Até logo",
+    "english": "See you later",
+    "phonetic": "ah-TEH LOH-goo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "greetings",
+    "portuguese": "Até já",
+    "english": "See you soon",
+    "phonetic": "ah-TEH ZHAH",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "greetings",
+    "portuguese": "Até amanhã",
+    "english": "See you tomorrow",
+    "phonetic": "ah-TEH ah-mahn-YAH",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "greetings",
+    "portuguese": "Tchau",
+    "english": "Bye (informal)",
+    "phonetic": "CHOW",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "greetings",
+    "portuguese": "Como está?",
+    "english": "How are you?",
+    "phonetic": "KOH-moo ish-TAH",
+    "variations": [
+      "Como estás? (informal)"
+    ]
+  },
+  {
+    "category": "greetings",
+    "portuguese": "Bem-vindo",
+    "english": "Welcome",
+    "phonetic": "baym-VEEN-doo",
+    "variations": [
+      "Bem-vinda (f)"
+    ]
+  },
+  {
+    "category": "politeness",
+    "portuguese": "Por favor",
+    "english": "Please",
+    "phonetic": "poor fah-VOHR",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "politeness",
+    "portuguese": "Obrigado",
+    "english": "Thank you",
+    "phonetic": "oh-bree-GAH-doo",
+    "variations": [
+      "Obrigada (f)"
+    ]
+  },
+  {
+    "category": "politeness",
+    "portuguese": "De nada",
+    "english": "You're welcome",
+    "phonetic": "deh NAH-dah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "politeness",
+    "portuguese": "Com licença",
+    "english": "Excuse me",
+    "phonetic": "kohm lee-SEN-sah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "politeness",
+    "portuguese": "Desculpe",
+    "english": "Sorry",
+    "phonetic": "desh-KOOL-peh",
+    "variations": [
+      "Desculpa (informal)"
+    ]
+  },
+  {
+    "category": "politeness",
+    "portuguese": "Perdão",
+    "english": "Pardon",
+    "phonetic": "pehr-DOUN",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "politeness",
+    "portuguese": "Muito obrigado",
+    "english": "Thank you very much",
+    "phonetic": "MWEEN-too oh-bree-GAH-doo",
+    "variations": [
+      "Muito obrigada (f)"
+    ]
+  },
+  {
+    "category": "politeness",
+    "portuguese": "Se faz favor",
+    "english": "Please (formal)",
+    "phonetic": "seh fahsh fah-VOHR",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "politeness",
+    "portuguese": "Não faz mal",
+    "english": "No problem",
+    "phonetic": "nown fahsh mahl",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "introductions",
+    "portuguese": "Chamo-me",
+    "english": "My name is",
+    "phonetic": "SHAH-moo-meh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "introductions",
+    "portuguese": "Como se chama?",
+    "english": "What's your name?",
+    "phonetic": "KOH-moo seh SHAH-mah",
+    "variations": [
+      "Como te chamas? (informal)"
+    ]
+  },
+  {
+    "category": "introductions",
+    "portuguese": "Prazer em conhecê-lo",
+    "english": "Nice to meet you",
+    "phonetic": "prah-ZEHR aym kohn-yeh-SEH-loo",
+    "variations": [
+      "conhecê-la (f)"
+    ]
+  },
+  {
+    "category": "introductions",
+    "portuguese": "Sou de",
+    "english": "I'm from",
+    "phonetic": "soh deh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "introductions",
+    "portuguese": "Tenho...anos",
+    "english": "I am...years old",
+    "phonetic": "TEN-yoo AH-noosh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "introductions",
+    "portuguese": "Falo português",
+    "english": "I speak Portuguese",
+    "phonetic": "FAH-loo poor-too-GAYSH",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "introductions",
+    "portuguese": "Não falo português",
+    "english": "I don't speak Portuguese",
+    "phonetic": "nown FAH-loo poor-too-GAYSH",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "introductions",
+    "portuguese": "Fala inglês?",
+    "english": "Do you speak English?",
+    "phonetic": "FAH-lah een-GLAYSH",
+    "variations": [
+      "Falas inglês? (informal)"
+    ]
+  },
+  {
+    "category": "introductions",
+    "portuguese": "Sou estudante",
+    "english": "I'm a student",
+    "phonetic": "soh esh-too-DAHN-teh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "introductions",
+    "portuguese": "Estou de férias",
+    "english": "I'm on vacation",
+    "phonetic": "ish-TOH deh FEH-ree-ahsh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "alphabet",
+    "portuguese": "A",
+    "english": "A",
+    "phonetic": "ah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "alphabet",
+    "portuguese": "B",
+    "english": "B",
+    "phonetic": "beh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "alphabet",
+    "portuguese": "C",
+    "english": "C",
+    "phonetic": "seh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "alphabet",
+    "portuguese": "D",
+    "english": "D",
+    "phonetic": "deh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "alphabet",
+    "portuguese": "E",
+    "english": "E",
+    "phonetic": "eh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "alphabet",
+    "portuguese": "F",
+    "english": "F",
+    "phonetic": "EH-feh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "alphabet",
+    "portuguese": "G",
+    "english": "G",
+    "phonetic": "zheh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "alphabet",
+    "portuguese": "H",
+    "english": "H",
+    "phonetic": "ah-GAH",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "alphabet",
+    "portuguese": "I",
+    "english": "I",
+    "phonetic": "ee",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "alphabet",
+    "portuguese": "J",
+    "english": "J",
+    "phonetic": "ZHOH-tah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "alphabet",
+    "portuguese": "K",
+    "english": "K",
+    "phonetic": "kah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "alphabet",
+    "portuguese": "L",
+    "english": "L",
+    "phonetic": "EH-leh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "alphabet",
+    "portuguese": "M",
+    "english": "M",
+    "phonetic": "EH-meh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "alphabet",
+    "portuguese": "N",
+    "english": "N",
+    "phonetic": "EH-neh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "alphabet",
+    "portuguese": "O",
+    "english": "O",
+    "phonetic": "oh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "alphabet",
+    "portuguese": "P",
+    "english": "P",
+    "phonetic": "peh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "alphabet",
+    "portuguese": "Q",
+    "english": "Q",
+    "phonetic": "keh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "alphabet",
+    "portuguese": "R",
+    "english": "R",
+    "phonetic": "EH-heh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "alphabet",
+    "portuguese": "S",
+    "english": "S",
+    "phonetic": "EH-seh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "alphabet",
+    "portuguese": "T",
+    "english": "T",
+    "phonetic": "teh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "alphabet",
+    "portuguese": "U",
+    "english": "U",
+    "phonetic": "oo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "alphabet",
+    "portuguese": "V",
+    "english": "V",
+    "phonetic": "veh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "alphabet",
+    "portuguese": "W",
+    "english": "W",
+    "phonetic": "DAH-bloo-veh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "alphabet",
+    "portuguese": "X",
+    "english": "X",
+    "phonetic": "sheesh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "alphabet",
+    "portuguese": "Y",
+    "english": "Y",
+    "phonetic": "EEP-see-lohn",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "alphabet",
+    "portuguese": "Z",
+    "english": "Z",
+    "phonetic": "zeh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "numbers",
+    "portuguese": "Zero",
+    "english": "Zero",
+    "phonetic": "ZEH-roo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "numbers",
+    "portuguese": "Um",
+    "english": "One",
+    "phonetic": "oom",
+    "variations": [
+      "Uma (f)"
+    ]
+  },
+  {
+    "category": "numbers",
+    "portuguese": "Dois",
+    "english": "Two",
+    "phonetic": "doysh",
+    "variations": [
+      "Duas (f)"
+    ]
+  },
+  {
+    "category": "numbers",
+    "portuguese": "Três",
+    "english": "Three",
+    "phonetic": "trehsh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "numbers",
+    "portuguese": "Quatro",
+    "english": "Four",
+    "phonetic": "KWAH-troo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "numbers",
+    "portuguese": "Cinco",
+    "english": "Five",
+    "phonetic": "SEEN-koo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "numbers",
+    "portuguese": "Seis",
+    "english": "Six",
+    "phonetic": "saysh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "numbers",
+    "portuguese": "Sete",
+    "english": "Seven",
+    "phonetic": "SEH-teh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "numbers",
+    "portuguese": "Oito",
+    "english": "Eight",
+    "phonetic": "OY-too",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "numbers",
+    "portuguese": "Nove",
+    "english": "Nine",
+    "phonetic": "NOH-veh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "numbers",
+    "portuguese": "Dez",
+    "english": "Ten",
+    "phonetic": "dehsh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "numbers",
+    "portuguese": "Onze",
+    "english": "Eleven",
+    "phonetic": "OHN-zeh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "numbers",
+    "portuguese": "Doze",
+    "english": "Twelve",
+    "phonetic": "DOH-zeh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "numbers",
+    "portuguese": "Treze",
+    "english": "Thirteen",
+    "phonetic": "TREH-zeh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "numbers",
+    "portuguese": "Catorze",
+    "english": "Fourteen",
+    "phonetic": "kah-TOHR-zeh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "numbers",
+    "portuguese": "Quinze",
+    "english": "Fifteen",
+    "phonetic": "KEEN-zeh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "numbers",
+    "portuguese": "Vinte",
+    "english": "Twenty",
+    "phonetic": "VEEN-teh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "numbers",
+    "portuguese": "Trinta",
+    "english": "Thirty",
+    "phonetic": "TREEN-tah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "numbers",
+    "portuguese": "Quarenta",
+    "english": "Forty",
+    "phonetic": "kwah-REN-tah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "numbers",
+    "portuguese": "Cinquenta",
+    "english": "Fifty",
+    "phonetic": "seen-KWEN-tah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "numbers",
+    "portuguese": "Cem",
+    "english": "One hundred",
+    "phonetic": "saym",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "numbers",
+    "portuguese": "Mil",
+    "english": "One thousand",
+    "phonetic": "meel",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "numbers",
+    "portuguese": "Primeiro",
+    "english": "First",
+    "phonetic": "pree-MAY-roo",
+    "variations": [
+      "Primeira (f)"
+    ]
+  },
+  {
+    "category": "numbers",
+    "portuguese": "Segundo",
+    "english": "Second",
+    "phonetic": "seh-GOON-doo",
+    "variations": [
+      "Segunda (f)"
+    ]
+  },
+  {
+    "category": "numbers",
+    "portuguese": "Terceiro",
+    "english": "Third",
+    "phonetic": "tehr-SAY-roo",
+    "variations": [
+      "Terceira (f)"
+    ]
+  },
+  {
+    "category": "time",
+    "portuguese": "Que horas são?",
+    "english": "What time is it?",
+    "phonetic": "keh OH-rahsh sown",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "time",
+    "portuguese": "É uma hora",
+    "english": "It's one o'clock",
+    "phonetic": "eh OO-mah OH-rah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "time",
+    "portuguese": "São duas horas",
+    "english": "It's two o'clock",
+    "phonetic": "sown DOO-ahsh OH-rahsh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "time",
+    "portuguese": "Meio-dia",
+    "english": "Noon",
+    "phonetic": "MAY-oo DEE-ah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "time",
+    "portuguese": "Meia-noite",
+    "english": "Midnight",
+    "phonetic": "MAY-ah NOY-teh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "time",
+    "portuguese": "Manhã",
+    "english": "Morning",
+    "phonetic": "mahn-YAH",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "time",
+    "portuguese": "Tarde",
+    "english": "Afternoon",
+    "phonetic": "TAR-deh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "time",
+    "portuguese": "Noite",
+    "english": "Night",
+    "phonetic": "NOY-teh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "time",
+    "portuguese": "Hoje",
+    "english": "Today",
+    "phonetic": "OH-zheh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "time",
+    "portuguese": "Ontem",
+    "english": "Yesterday",
+    "phonetic": "OHN-taym",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "time",
+    "portuguese": "Amanhã",
+    "english": "Tomorrow",
+    "phonetic": "ah-mahn-YAH",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "time",
+    "portuguese": "Agora",
+    "english": "Now",
+    "phonetic": "ah-GOH-rah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "time",
+    "portuguese": "Mais tarde",
+    "english": "Later",
+    "phonetic": "mahysh TAR-deh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "time",
+    "portuguese": "Cedo",
+    "english": "Early",
+    "phonetic": "SEH-doo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "days & months",
+    "portuguese": "Segunda-feira",
+    "english": "Monday",
+    "phonetic": "seh-GOON-dah FAY-rah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "days & months",
+    "portuguese": "Terça-feira",
+    "english": "Tuesday",
+    "phonetic": "TEHR-sah FAY-rah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "days & months",
+    "portuguese": "Quarta-feira",
+    "english": "Wednesday",
+    "phonetic": "KWAR-tah FAY-rah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "days & months",
+    "portuguese": "Quinta-feira",
+    "english": "Thursday",
+    "phonetic": "KEEN-tah FAY-rah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "days & months",
+    "portuguese": "Sexta-feira",
+    "english": "Friday",
+    "phonetic": "SAYSH-tah FAY-rah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "days & months",
+    "portuguese": "Sábado",
+    "english": "Saturday",
+    "phonetic": "SAH-bah-doo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "days & months",
+    "portuguese": "Domingo",
+    "english": "Sunday",
+    "phonetic": "doo-MEEN-goo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "days & months",
+    "portuguese": "Janeiro",
+    "english": "January",
+    "phonetic": "zhah-NAY-roo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "days & months",
+    "portuguese": "Fevereiro",
+    "english": "February",
+    "phonetic": "feh-veh-RAY-roo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "days & months",
+    "portuguese": "Março",
+    "english": "March",
+    "phonetic": "MAR-soo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "days & months",
+    "portuguese": "Abril",
+    "english": "April",
+    "phonetic": "ah-BREEL",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "days & months",
+    "portuguese": "Maio",
+    "english": "May",
+    "phonetic": "MAH-yoo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "days & months",
+    "portuguese": "Junho",
+    "english": "June",
+    "phonetic": "ZHOON-yoo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "days & months",
+    "portuguese": "Julho",
+    "english": "July",
+    "phonetic": "ZHOOL-yoo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "days & months",
+    "portuguese": "Agosto",
+    "english": "August",
+    "phonetic": "ah-GOHSH-too",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "days & months",
+    "portuguese": "Setembro",
+    "english": "September",
+    "phonetic": "seh-TEM-broo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "days & months",
+    "portuguese": "Outubro",
+    "english": "October",
+    "phonetic": "oh-TOO-broo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "days & months",
+    "portuguese": "Novembro",
+    "english": "November",
+    "phonetic": "noo-VEM-broo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "days & months",
+    "portuguese": "Dezembro",
+    "english": "December",
+    "phonetic": "deh-ZEM-broo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "food & drink",
+    "portuguese": "Pão",
+    "english": "Bread",
+    "phonetic": "pown",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "food & drink",
+    "portuguese": "Água",
+    "english": "Water",
+    "phonetic": "AH-gwah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "food & drink",
+    "portuguese": "Café",
+    "english": "Coffee",
+    "phonetic": "kah-FEH",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "food & drink",
+    "portuguese": "Chá",
+    "english": "Tea",
+    "phonetic": "shah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "food & drink",
+    "portuguese": "Leite",
+    "english": "Milk",
+    "phonetic": "LAY-teh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "food & drink",
+    "portuguese": "Vinho",
+    "english": "Wine",
+    "phonetic": "VEEN-yoo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "food & drink",
+    "portuguese": "Cerveja",
+    "english": "Beer",
+    "phonetic": "sehr-VAY-zhah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "food & drink",
+    "portuguese": "Sumo",
+    "english": "Juice",
+    "phonetic": "SOO-moo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "food & drink",
+    "portuguese": "Carne",
+    "english": "Meat",
+    "phonetic": "KAR-neh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "food & drink",
+    "portuguese": "Peixe",
+    "english": "Fish",
+    "phonetic": "PAY-sheh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "food & drink",
+    "portuguese": "Frango",
+    "english": "Chicken",
+    "phonetic": "FRAHN-goo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "food & drink",
+    "portuguese": "Arroz",
+    "english": "Rice",
+    "phonetic": "ah-HOHSH",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "food & drink",
+    "portuguese": "Batatas",
+    "english": "Potatoes",
+    "phonetic": "bah-TAH-tahsh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "food & drink",
+    "portuguese": "Salada",
+    "english": "Salad",
+    "phonetic": "sah-LAH-dah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "food & drink",
+    "portuguese": "Sopa",
+    "english": "Soup",
+    "phonetic": "SOH-pah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "food & drink",
+    "portuguese": "Queijo",
+    "english": "Cheese",
+    "phonetic": "KAY-zhoo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "food & drink",
+    "portuguese": "Ovos",
+    "english": "Eggs",
+    "phonetic": "OH-voosh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "food & drink",
+    "portuguese": "Pequeno-almoço",
+    "english": "Breakfast",
+    "phonetic": "peh-KAY-noo ahl-MOH-soo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "food & drink",
+    "portuguese": "Almoço",
+    "english": "Lunch",
+    "phonetic": "ahl-MOH-soo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "food & drink",
+    "portuguese": "Jantar",
+    "english": "Dinner",
+    "phonetic": "zhahn-TAR",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "food & drink",
+    "portuguese": "A conta",
+    "english": "The bill",
+    "phonetic": "ah KOHN-tah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "food & drink",
+    "portuguese": "Menu",
+    "english": "Menu",
+    "phonetic": "meh-NOO",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "transport",
+    "portuguese": "Carro",
+    "english": "Car",
+    "phonetic": "KAH-hoo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "transport",
+    "portuguese": "Autocarro",
+    "english": "Bus",
+    "phonetic": "ow-too-KAH-hoo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "transport",
+    "portuguese": "Comboio",
+    "english": "Train",
+    "phonetic": "kohm-BOY-oo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "transport",
+    "portuguese": "Metro",
+    "english": "Subway",
+    "phonetic": "MEH-troo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "transport",
+    "portuguese": "Táxi",
+    "english": "Taxi",
+    "phonetic": "TAHK-see",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "transport",
+    "portuguese": "Avião",
+    "english": "Airplane",
+    "phonetic": "ah-vee-OWN",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "transport",
+    "portuguese": "Barco",
+    "english": "Boat",
+    "phonetic": "BAR-koo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "transport",
+    "portuguese": "Bilhete",
+    "english": "Ticket",
+    "phonetic": "beel-YEH-teh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "transport",
+    "portuguese": "Estação",
+    "english": "Station",
+    "phonetic": "ish-tah-SOWN",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "transport",
+    "portuguese": "Aeroporto",
+    "english": "Airport",
+    "phonetic": "ah-eh-roo-POHR-too",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "transport",
+    "portuguese": "Paragem",
+    "english": "Stop",
+    "phonetic": "pah-RAH-zhaym",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "transport",
+    "portuguese": "Chegada",
+    "english": "Arrival",
+    "phonetic": "sheh-GAH-dah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "transport",
+    "portuguese": "Partida",
+    "english": "Departure",
+    "phonetic": "par-TEE-dah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "directions",
+    "portuguese": "Onde é?",
+    "english": "Where is?",
+    "phonetic": "OHN-deh eh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "directions",
+    "portuguese": "Onde fica?",
+    "english": "Where is located?",
+    "phonetic": "OHN-deh FEE-kah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "directions",
+    "portuguese": "À direita",
+    "english": "To the right",
+    "phonetic": "ah dee-RAY-tah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "directions",
+    "portuguese": "À esquerda",
+    "english": "To the left",
+    "phonetic": "ah ish-KEHR-dah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "directions",
+    "portuguese": "Em frente",
+    "english": "Straight ahead",
+    "phonetic": "aym FREN-teh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "directions",
+    "portuguese": "Atrás",
+    "english": "Behind",
+    "phonetic": "ah-TRAHSH",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "directions",
+    "portuguese": "Perto",
+    "english": "Near",
+    "phonetic": "PEHR-too",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "directions",
+    "portuguese": "Longe",
+    "english": "Far",
+    "phonetic": "LOHN-zheh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "directions",
+    "portuguese": "Norte",
+    "english": "North",
+    "phonetic": "NOHR-teh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "directions",
+    "portuguese": "Sul",
+    "english": "South",
+    "phonetic": "sool",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "directions",
+    "portuguese": "Este",
+    "english": "East",
+    "phonetic": "ESH-teh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "directions",
+    "portuguese": "Oeste",
+    "english": "West",
+    "phonetic": "oh-ESH-teh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "directions",
+    "portuguese": "Rua",
+    "english": "Street",
+    "phonetic": "HOO-ah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "directions",
+    "portuguese": "Praça",
+    "english": "Square",
+    "phonetic": "PRAH-sah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "shopping",
+    "portuguese": "Quanto custa?",
+    "english": "How much?",
+    "phonetic": "KWAHN-too KOOSH-tah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "shopping",
+    "portuguese": "Caro",
+    "english": "Expensive",
+    "phonetic": "KAH-roo",
+    "variations": [
+      "Cara (f)"
+    ]
+  },
+  {
+    "category": "shopping",
+    "portuguese": "Barato",
+    "english": "Cheap",
+    "phonetic": "bah-RAH-too",
+    "variations": [
+      "Barata (f)"
+    ]
+  },
+  {
+    "category": "shopping",
+    "portuguese": "Dinheiro",
+    "english": "Money",
+    "phonetic": "deen-YAY-roo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "shopping",
+    "portuguese": "Cartão",
+    "english": "Card",
+    "phonetic": "kar-TOWN",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "shopping",
+    "portuguese": "Loja",
+    "english": "Store",
+    "phonetic": "LOH-zhah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "shopping",
+    "portuguese": "Mercado",
+    "english": "Market",
+    "phonetic": "mehr-KAH-doo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "shopping",
+    "portuguese": "Supermercado",
+    "english": "Supermarket",
+    "phonetic": "soo-pehr-mehr-KAH-doo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "shopping",
+    "portuguese": "Farmácia",
+    "english": "Pharmacy",
+    "phonetic": "far-MAH-see-ah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "shopping",
+    "portuguese": "Aberto",
+    "english": "Open",
+    "phonetic": "ah-BEHR-too",
+    "variations": [
+      "Aberta (f)"
+    ]
+  },
+  {
+    "category": "shopping",
+    "portuguese": "Fechado",
+    "english": "Closed",
+    "phonetic": "feh-SHAH-doo",
+    "variations": [
+      "Fechada (f)"
+    ]
+  },
+  {
+    "category": "shopping",
+    "portuguese": "Desconto",
+    "english": "Discount",
+    "phonetic": "desh-KOHN-too",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "shopping",
+    "portuguese": "Troco",
+    "english": "Change",
+    "phonetic": "TROH-koo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "shopping",
+    "portuguese": "Recibo",
+    "english": "Receipt",
+    "phonetic": "heh-SEE-boo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "lodging",
+    "portuguese": "Hotel",
+    "english": "Hotel",
+    "phonetic": "oh-TEHL",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "lodging",
+    "portuguese": "Quarto",
+    "english": "Room",
+    "phonetic": "KWAR-too",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "lodging",
+    "portuguese": "Reserva",
+    "english": "Reservation",
+    "phonetic": "heh-ZEHR-vah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "lodging",
+    "portuguese": "Chave",
+    "english": "Key",
+    "phonetic": "SHAH-veh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "lodging",
+    "portuguese": "Casa de banho",
+    "english": "Bathroom",
+    "phonetic": "KAH-zah deh BAHN-yoo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "lodging",
+    "portuguese": "Cama",
+    "english": "Bed",
+    "phonetic": "KAH-mah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "lodging",
+    "portuguese": "Toalha",
+    "english": "Towel",
+    "phonetic": "too-AHL-yah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "lodging",
+    "portuguese": "Ar condicionado",
+    "english": "Air conditioning",
+    "phonetic": "ahr kohn-dee-see-oh-NAH-doo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "lodging",
+    "portuguese": "Pequeno-almoço incluído?",
+    "english": "Breakfast included?",
+    "phonetic": "peh-KAY-noo ahl-MOH-soo een-kloo-EE-doo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "lodging",
+    "portuguese": "Wi-Fi",
+    "english": "Wi-Fi",
+    "phonetic": "wee-fee",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "lodging",
+    "portuguese": "Elevador",
+    "english": "Elevator",
+    "phonetic": "eh-leh-vah-DOHR",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "lodging",
+    "portuguese": "Recepção",
+    "english": "Reception",
+    "phonetic": "heh-seh-SOWN",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "emergency",
+    "portuguese": "Ajuda!",
+    "english": "Help!",
+    "phonetic": "ah-ZHOO-dah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "emergency",
+    "portuguese": "Socorro!",
+    "english": "Help!",
+    "phonetic": "soo-KOH-hoo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "emergency",
+    "portuguese": "Emergência",
+    "english": "Emergency",
+    "phonetic": "eh-mehr-ZHEN-see-ah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "emergency",
+    "portuguese": "Polícia",
+    "english": "Police",
+    "phonetic": "poo-LEE-see-ah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "emergency",
+    "portuguese": "Hospital",
+    "english": "Hospital",
+    "phonetic": "osh-pee-TAHL",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "emergency",
+    "portuguese": "Médico",
+    "english": "Doctor",
+    "phonetic": "MEH-dee-koo",
+    "variations": [
+      "Médica (f)"
+    ]
+  },
+  {
+    "category": "emergency",
+    "portuguese": "Ambulância",
+    "english": "Ambulance",
+    "phonetic": "ahm-boo-LAHN-see-ah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "emergency",
+    "portuguese": "Fogo!",
+    "english": "Fire!",
+    "phonetic": "FOH-goo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "emergency",
+    "portuguese": "Ladrão!",
+    "english": "Thief!",
+    "phonetic": "lah-DROWN",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "emergency",
+    "portuguese": "Estou doente",
+    "english": "I'm sick",
+    "phonetic": "ish-TOH doo-EN-teh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "emergency",
+    "portuguese": "Dói",
+    "english": "It hurts",
+    "phonetic": "doy",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "emergency",
+    "portuguese": "Remédio",
+    "english": "Medicine",
+    "phonetic": "heh-MEH-dee-oo",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "misc",
+    "portuguese": "Sim",
+    "english": "Yes",
+    "phonetic": "seem",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "misc",
+    "portuguese": "Não",
+    "english": "No",
+    "phonetic": "nown",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "misc",
+    "portuguese": "Talvez",
+    "english": "Maybe",
+    "phonetic": "tahl-VEHSH",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "misc",
+    "portuguese": "Sempre",
+    "english": "Always",
+    "phonetic": "SEM-preh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "misc",
+    "portuguese": "Nunca",
+    "english": "Never",
+    "phonetic": "NOON-kah",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "misc",
+    "portuguese": "Muito",
+    "english": "Very/Much",
+    "phonetic": "MWEEN-too",
+    "variations": [
+      "Muita (f)"
+    ]
+  },
+  {
+    "category": "misc",
+    "portuguese": "Pouco",
+    "english": "Little/Few",
+    "phonetic": "POH-koo",
+    "variations": [
+      "Pouca (f)"
+    ]
+  },
+  {
+    "category": "misc",
+    "portuguese": "Grande",
+    "english": "Big",
+    "phonetic": "GRAHN-deh",
+    "variations": [
+      "nan"
+    ]
+  },
+  {
+    "category": "misc",
+    "portuguese": "Pequeno",
+    "english": "Small",
+    "phonetic": "peh-KAY-noo",
+    "variations": [
+      "Pequena (f)"
+    ]
+  },
+  {
+    "category": "misc",
+    "portuguese": "Bom",
+    "english": "Good",
+    "phonetic": "bohm",
+    "variations": [
+      "Boa (f)"
+    ]
+  },
+  {
+    "category": "misc",
+    "portuguese": "Mau",
+    "english": "Bad",
+    "phonetic": "mow",
+    "variations": [
+      "Má (f)"
+    ]
+  }
+]
