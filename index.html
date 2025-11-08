@@ -45,10 +45,8 @@ body{
   color: #fff;
   -webkit-tap-highlight-color: transparent;
   min-height: 100dvh;
-body{
-  /* keep everything else as-is */
-  /* gentler top spacing: inset + a small cushion */
-  padding-top: calc(env(safe-area-inset-top) + 14px);
+  padding-top: calc(env(safe-area-inset-top) + 14px); /* ✅ Adjust this value */
+  padding-bottom: max(12px, env(safe-area-inset-bottom));
 }
 
 header{
