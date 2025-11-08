@@ -1,12 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <title>Portuguese (EU) Flashcards — Mobile</title>
+
+  <!-- ✅ Progressive Web App Configuration -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#667eea">
+
+  <!-- ✅ iOS Home Screen Icon & App Mode -->
+  <link rel="apple-touch-icon" href="icons/icon-apple.png">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <link rel="apple-touch-icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><rect width='100%' height='100%' fill='%23667eea'/><text x='50%' y='54%' font-size='92' text-anchor='middle' fill='white'>PT</text></svg>">
+  <meta name="apple-mobile-web-app-title" content="PT Cards">
+
+  <!-- Previous inline SVG fallback icon (optional, can be removed if you prefer) -->
+  <!-- <link rel="apple-touch-icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><rect width='100%' height='100%' fill='%23667eea'/><text x='50%' y='54%' font-size='92' text-anchor='middle' fill='white'>PT</text></svg>"> -->
+
   <style>
     :root{ --bg1:#667eea; --bg2:#764ba2; --card:#fff; --text:#1f2937; --chip:#ffffff22; --chip-active:#ffffff55; }
     *{box-sizing:border-box} html,body{height:100%} body{margin:0;font-family:ui-sans-serif,-apple-system,system-ui,'Segoe UI',Roboto,Arial;background:linear-gradient(135deg,var(--bg1),var(--bg2));color:#fff;-webkit-tap-highlight-color:transparent;}
