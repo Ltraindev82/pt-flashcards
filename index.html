@@ -2047,17 +2047,51 @@
   }
 ];
 
-    const LS_KEY = "pt_flashcards_deck_v3";
-    function loadDeck(){ 
-      const raw = localStorage.getItem(LS_KEY); 
-      return raw ? JSON.parse(raw) : embeddedDeck.slice(); 
-    }
-    function saveDeck(deck){ localStorage.setItem(LS_KEY, JSON.stringify(deck)); }
+const LS_KEY = "pt_flashcards_deck_v3";
 
-    let deck = loadDeck();
-    let filtered = deck.slice();
-    let idx = 0;
-    let currentCategory = "all";
+function loadDeck() { 
+  const raw = localStorage.getItem(LS_KEY); 
+  return raw ? JSON.parse(raw) : embeddedDeck.slice(); 
+}
+
+function saveDeck(deck) { 
+  localStorage.setItem(LS_KEY, JSON.stringify(deck)); 
+}
+
+/* 🧹 Cleanup helpers to remove NaN / empty values */
+function isEmptyish(v) {
+  if (v === null || v === undefined) return true;
+  const s = String(v).trim();
+  return s === '' || s.toLowerCase() === 'nan' || s.toLowerCase() === 'none' || s.toLowerCase() === 'null';
+}
+
+function normalizeDeck(arr) {
+  return arr.map(row => {
+    let vars = [];
+    if (Array.isArray(row.variations)) {
+      vars = row.variations;
+    } else if (typeof row.variations === 'string') {
+      vars = row.variations.split(/\s*,\s*/);
+    }
+    const cleanVars = (vars || [])
+      .filter(v => !isEmptyish(v))
+      .map(v => String(v).trim());
+
+    return {
+      category: isEmptyish(row.category) ? 'Miscellaneous' : String(row.category).trim(),
+      portuguese: isEmptyish(row.portuguese) ? '' : String(row.portuguese).trim(),
+      english: isEmptyish(row.english) ? '' : String(row.english).trim(),
+      phonetic: isEmptyish(row.phonetic) ? '' : String(row.phonetic).trim(),
+      variations: cleanVars
+    };
+  });
+}
+
+/* ✅ Clean the loaded deck before rendering */
+let deck = normalizeDeck(loadDeck());
+let filtered = deck.slice();
+let idx = 0;
+let currentCategory = "all";
 
     const chipbar = document.getElementById('chipbar');
     const leftChev = document.getElementById('leftChev');
